@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body >
+    <header>
+        <div class="logo">
+
+            <img src="img/prozis-link-share.jpg" alt="Imagen logo de Prozis">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a  href="inicio.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="principal" href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centrarFormulario"> 
+    
+        <div  class="contenedorFormulario">
+
+                <div class="infoIzquierda">
+                    <div class="izquierda">
+                        <h2>Bienvenido</h2>
+                        <p>Para unirte a nuestra comunidad por favor registrate con tus datos</p>
+                        <input type="button" value="Iniciar Sesión">
+                    </div>
+                </div>
+
+                <div class="infoDerecha">
+                        <div class="derecha">
+                            <h2>Crear una cuenta</h2>
+
+                            <div class="icons">
+                                <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkBJREFUSEvl1smrz1EYx/HXNUeyMqSwsrGwMIYsLBQZoiRiQYYVYsU/YMEKpZCpWNiwUCTFyrAgQ6QMKUOGoihDZPo+9b36dTq/3+/cexc3+S6/53Oe9/Oc85zzOR166evoJa5/ChzJjsQYfMczfOjqypVWPADrsBizMDQBvcAFnMLlkiRKwPNwAONKAuIeVuBBK3078MYa2k6XMj7VW9F0C1oFXI0ThVU2yn5gCc51p+JpuIp+mcnfqsB3cAPvMRFLa93PaomXV//OtEs4V3Hfqolu1QHTSnZjJ74kgYdjFZ6XQGNuDrymaqRjSeCocgrut6ukdDwHPotFSYBN2F8atESXgmOZP2JIw+To0GH4VRKwVJOCx+NRMvl81UgLMgEjmdIbaxv2NMZIwZNxM4FsRzRV+nUFvLdKcmsrcByNuwkhJsTEnoCj2qj675dWPAqvE8LxygjW9hC8A7tagWPsTe0+nbrbmJQBRyPOzvyfkDkBK2sDaVpxDJysL4NO0W+EUVws7NhD2NCgjfkj8K5dxXMy1hbdOz3T8Wkuc2t77NMwcL1KemYqbGYS1zAjEX+t7ubNlescyVTev7bCsM/ByfgynC4Fx/V4BQMzkDCHx3iJQRhbJxmvkvSLozk1t0WtbDE6+WjhvuZkb+umfNVVcOijSQ42MZNWOT2pLqKFeNhMVPKymI/DGF1YfazSFnxupS8Bx/x47K2vXSv32HtanelL2FdqnaXg9Ag2Pm+j0dKHQdvF6Q64bdASwf8H/gP3JF4ffaoC7QAAAABJRU5ErkJggg=="/>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwZJREFUSEvllknojlEUxn9/YxmKIvOQDFFmNmQIO0RSlIzFws4QJWRIFGKjLMxKWRgybSgZisyJSCxkSiky7Qzn0Xn1dt37vu9n81dufb313XvPc89znjPUUU+rrp5w+eeBOwA9gYYlDH0DngJvypgs8rg9sBWYCLQuMxTsvwfOAitSj0gBC+yoATd3g1+Au4A8KlpNgCFAUz/0GZgBnAsvxYCbAc8AebzfvruB2xVAM9uNgFHAev++BnqZ91/z4DFgXVjrHs+skWIdn22gsnsIuAiM9UesKwN+CXRyj9/WCCxQAWrN9/DcA14BnYuARa8U+dg87psA1aOmACOAH8A14ITfmwMc9HsLPFSfgBZAW+BdZjOkWsJQPK96fELsRWZkG9Ay2PgILAH2AfOc6geWETddLz2A/oD++7VCYInisqfCpMD4MgcVyE7gDtAYGOCg8krg2suv+w4qhsROFHgCcN6pm5a7PdhfL6qGeszyxrv6Q8SEWHuY21SMBzqDYrIQ+JjRMj13eYOl0xpgKbAjEfuVwBZgtTGxKXdGzOjho4ErKeDxwIWIx6cBUa+fKlJsiSE9OHy0NCMWlFaXUsDaVO6dMZFNzlk/6UqWmk/VCCyBDTPtjHPbUaozYBkXSLZUUFRYlpuityeAVznF+m7Onbnluhjjwi0EDj3u4rmtsjcoIq5uXixULvsEjaGSuEZ6DiuOYTottiKwy7xW4VfKyBM1BSlWaaQav9Aq1J6AESm8n2ljuN+Jeiz1SYWpAiLDojpWQKT4vZEwqOGogOiByukosOrpC6uzz4HuiViqZE61fBc7apPXrYgcT/TdBt6V1CYVLvWBKLAmjA9eWztWmSQSj8v+lpqlaoWnVb61xtqi6FKBPwLMKjFctq3yqzKsvi6bv1cMuA3wxMcdTQ4bgRvWo7+Xofh+NgjonsKhMah3vjPpXGr0mWsxPpAD+tvRRybUKg+Hjy4a9lRbpVRVMImkliV2VAuUAaL7j1Vlrm5XMBSkHvMIKJxeqgDX4mnls/8f8E/8tqAfEQrEDwAAAABJRU5ErkJggg=="/>
+                            
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAn1JREFUSEvFll1oz1EYxz+LRsu83WxygaSIXLmQJuXCXNokFyhyRUSyxM3ukJfalEutlLU0K5m4cSNlYrUScuO1vCTZGmmLOF+dv87/OOd3zv/nYk/tYr//c57P85znOc/z1DFFUjdFXGoFTwPWAouBBdbpd8BrYAj4mRtILngZcBxoA+ZGjH8BrgGngBcpB1LgBuA0sB9QtDnyAzgHdAKTsQNF4EXATWBlDi2g8xDYAigV/0gMvAK4B8wvCa0cE3SdrYEqUyFwsy0URZySj8Bd4CXwHZgObAWWOwefWviYaywE7gO2p4jGuPT2AaOe7kFzUxe8bxeBA0VgefosA6ooVkeezyFT+V2eDRWZnuD7ync/4svArgywrnPA05Nh/bUDitqXMyYdx0LgeuATMDsDrJt57uj129wWHdXbXhoCbwTuZEClIufGra4cnsg899dh96p3Az2ZBhqBr1Z3luNE6rje9XUpueAOQHnIkbLgw0C3Dz4KnI1QXwFLcjwCrgLbIrpinPfBqmZVdUhqAT8GVkXs7AB6fbDG3f3IgaqKLIhcg+SbmVAzIjprgGEfrHan0aZi8UXd6U9urJx0Jo+q+oT9rtwfiUBlQ73/lw/W/znvUXpliusKsLPilN+5dBUaZykpA1ben8TA+n7LTKfNCXKtYN1kVaXHxqKGwLwCeC3gD4Dme9UUiy0CG8xSd9usPTMj8Fyw2qpa8SPfTtHq0wIMAnMC8BywBs4ms/6MhJxPLXsLbSfS+uJKCnzDrDt7zHj8HEtXClx5cuuBvabBtAJNkef01qbnEvAg9SxywL4N9ew3zvahbiVngtvk/0Sccr7U72UiLgXyD/0GGLB0H1VMfAgAAAAASUVORK5CYII="/>
+                                <p> o usa tu email para registrarte</p>
+                            </div>
+                                    <form class="form">
+
+                                        <label>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAmFJREFUSEvl1knIjVEcx/HPS+aNcWVnYSND5lKmiNgQC2RFyZBMCymlWFjItEBSNkRKSUJIFBtTkSHWZCEkRZHp+b+dt+77vPfe57n3vvUunN29zzm/7/kP53dOmx4abT3E1Qy4N8ZhStr0QzzH70aCaBS8DEcxMgd5i824XBbeCPgwthYIH8KOMvCy4Pm4mQQfYReepN+TsL8i9XNxpwheFnwL81ItJ+NnTrgvHmMsrmNRd4B74Rv6YxOO1xDdiGP4mvXBEPypBy8TcXTwsySyGNdqCEaUV9O3MXjVKjg6+F0SWYXzNQRX4lz6FmvetwqO9Z8wFPW69mCW5u34mKV8RHfUODT2YXcyiaW4khNegovZvDCXPdjbXeBorJcYlQTvpy7ukzp5Zvr/TXK1fNd32UeZ5upYFE12NoGqBRS2GXWODRaORsAhFkdrAxZgepb+XynyOLsni45Q5W4aBRdGUnZCWfAwzMhcaRrCufrlAD9S5A8yh4v6fy7aQBF4MA5gLaWv0L8p7TuTi1XdQz3wcpzA8IqV35OLVfPq8RhYMfcD1uNSNXItcFzykbaO76dxBC+ycxoR1dKKS2IL1qQJMXdqKkOnNdXAcdPE0RiNiHAh7hXVLPd9VvL0yMDrLOrIRqcsVQOHLW5LQuuy18apBqEd0yPNUaoYXay2GjiiHIAbKdomue3LbiMeBqE5qN45jmMTJh9jBS60QsVqnEkacUd/6dDLRzyx4kkTtY2oWxmVd3RYbvRO+8iDZ1e8l+bgbivUbH1NvTw4DGNCgj2tTE2TG6ipV+RcTfKKl/1/4H9Qfmkf+jdIxwAAAABJRU5ErkJggg=="/>
+                                            <input type="text" required placeholder="Nombre Completo">
+                                        </label>
+
+                                        <label>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvt1s+LTlEcx/HXyI8lJQvJj39Amo1kY8POj9KUFAs2UtOkbPxYIMRCEQs7JVNSUn7szGJ2lIWFLGVSspAFm2kQzlfn6rh55j7zuD3P5rmrc8/9ns/7ez/ne36MGNAzMiCuIbhvztetPoIT2NByBjM4j1uVbgnehumWgXW5zXgRnSX4FC7myHMtJ3Am653E5Tr4LKqAg5hsCX4Ad4ofCs5ff1yC49tNHMPXHhNYims4WowPJxvBEf8Su/B+gfA1eIzR2rhGcNgcFsXzCfvxtEv4DtzFyhxfav0THPP724Y8BRO4kgpuCX7k+Y/i+9khgSjU02lsiC9K7W84nhK4UYzpChz6W/AIqzJsCmP4XIMvx31sz/0fsBfP83uVbKPV5TJbjQc5idB5h514lUU34knaHNbl94DtxsciuZ7AMX4xrmI8i82lBA7nduxGy3L7erb3e82RnsGVzj7cLkBV/ywO4V6H+f9vcOhuSsvkIdZnyJu07Pbg9TxV3wo49FcgbI1qj+r/0rDUWgN3uaT/hA3BfT8W4+i9VG2N1UT04yKwFc/q4HiPIywO67ULrZ6G+LdpE7rQ6erTMmt+ueG9um92D8zqXxs3ZB/GykYiAAAAAElFTkSuQmCC"/>
+                                            <input type="email" required placeholder="Correo Electrónico">
+                                        </label>
+
+                                        <label>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXlJREFUSEvt1jFLXEEUhuFnQUiRIpUogUhQENuY2CnEIun0B0jAViwULIRIIEawFLUSyxDyAwKCCIJiLAWxs4igEEiQQJoUaYzuyAjm7t7d2YuwhTvNZWbO+d45350ZpqRJrdQkriLgNjzD87joAxziopEiGgGH2LeYxaMM5DcWsJIKbwT8CW/qCC9jJgWeCh7D5yh4FsX3Yv8lltAV+6+wXQ+eCj5BN4KlvfiVEe4su/END7GPobsA90TRoPUOizmiYXwO/+Ie+FMLnlLxIL5GkRFs5AiOlnf7lzg3gLDbc1sKOPzDnagwjN0ctdS46/QW+LaL/XiNPozHiY84zbH6aSbuGFvxVqtIybN6upFbqM7RmcB6NiYPfI72emcxcf47nqSCL2Pgh/J3PhGQDQt57+NgRYF5FbfARdxuWf2fa63NdWPH/TtOP9FR5AxVyfmBx6lX5hRW7wg8WS5iLRUc4l4gvBgfFFzAX2ziqFp+ygukILd2WtPAVy2vVh9r3bT7AAAAAElFTkSuQmCC"/>
+                                            <input type="password" required placeholder="Contraseña">
+                                        </label>
+                                        <label>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA4FJREFUSEvFllnITlEUhp/fkCEy3pAL4sKYzBkyZchUZiFy4QYZkuEChURkKIqiKFFC5kxlLkSmiFCGRMo8K+N+tY7Wd/5zzvfRX/+qr863h/Xuvda71ruLKCUrKiVcSgJ4HFABeAhcAj4Ucpks4HJAc+AW8D3D2Wmgm83/MvAVwJ6sA6QBVwvOTgGtgKtAD+B9iiMP7JecBYYAr5P2JQFXAU4A7d2Ga0BP4G2CkzJAQ6Ax0BSYBdS2dfeAPsDj+L44cGXgGNDFFr4DdHtZFrj3WyccYgfQ1QbvAB3iuffAOrlAe9mG48BIYBfQ24F3j4V9AlDP1t21dfK1Gphu/3cDI/zpPPAYYLtN6gCDga9AReCgO1A85z7H2jcPuAKUBS4Cbc1nJ+BCBO6B5wDLbaI6oDBHFgffAEy2yTi5fho/BK6cXwfKh3AfCYzvnwQ8FthmEyLLAwdcNTg77HK/KMwttPlKQBNgEjDRxhSVNvataA20kqwRyPdR4/7GKpmTtlh5PGPfuu05F7KtgPKqmo3bWmCqDTYLHLkNLAAW21jEmRzgRsB9WzAzsHmNfXcMJXHekWQUoHAmmW4uMJk6miIoYoqoMh1iSfzGIsMLQOFQHUfs1o01rvouxs4YusKuXMrWhxzvNH97bWwzoIgV69WbLE/fbMMn27DFwqvxusDLlBsXPBxvIANCLg/Z7mnAOvv24dpvpVYwSNLCOLCEQZ1G+X4ONLBa1l71bpFONheQEHhTipZa6cwOzeNN1smSerXIo5Ynk4OV9q3upEMp1zKVyRTgiaVFVdDC5m6aYqWCp6mTir5lAFaOOweVuWEOh1p3E+EiExElClrvTT4kLIngacCtTVfF9KdWwwq9TOEX2SIN9mA6hLS7rw2mgmc9BGa4WlZtqt1F8qZ9wwD1d43rBXLZdPsHcMAJSyJ4vqePHAyy078yYVcX8yYpbWfAn20i3tslqRKLv40nH7C0eJ9js26zzH4RSBp5tfdZYL8OJpMm6032x/IBa43yvMppq8aUb7U/abVXscivOpj6gcglk2goKgXf2N9GwrDR6jQal1BI/kQqPQpVbo+sVUag0mSRLefNVsiNPbgYPT9I5vjQ7NVs8pn40M/KMmftvwJHm+sDowOh1GL1skjyI/0eHrrcl6TT/S+w91XTGFsL0LdIpZwezQpHSQDnC3fifKkB/wYUVbMfxOe3qgAAAABJRU5ErkJggg=="/>
+                                            <input type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Teléfono">
+                                        </label>
+                                        <label>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATRJREFUSEvt1rEuBFEUxvHf9hJ6BR0diYpE8AISndIbeBPPoNVolSiEhEYlUZF4AJUSe9mVMZmZnLszyazErSZ3vnv+5575cuYM9LQGPXFFwIs4GCV4PHx+qkk2qvs6HgFv43wE28FFDTiqmz7wJo6wFqxIk00+cIdDXBeF5VLP4gUzHZvuFfN4G8ctgzdw1TF0HG4dN3XgokHukTJts+awUmXM8o2znBnIqDbeVIJ7K3WgklmSX82nqdRZUQPivwO+HPbn5M60Up/eQnSvWIjsG0chVbpW4Gek32Fa6fe4gOheK3DANyFJdqlDUQOibHBv37g3cNRIVbp/c/0MiuVevYyHgEMnkSzhsW4CSfun2JskcsOZE+wX31fN1WlvF6sdTJnvuMVZOanIQN/x5b/D9Qb+BFzSah/W13HlAAAAAElFTkSuQmCC"/>
+                                            <input type="date" placeholder="Fecha Nacimiento">
+                                        </label>
+                                        
+                                        <input type="submit" value="Registrarse"> 
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div> 
+<footer>
+    <p>Pagina web hecha por <strong>Laura Lodeiro Casas</strong> <a href="#">(lauralodcas@gmail.com)</a>.</p>
+    <p>&copy; 2024. Todos los creditos reservados</p>
+</footer>
+</body>
+
+</html>

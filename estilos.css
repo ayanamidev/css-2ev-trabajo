@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0;
+    background-color:rgb(237, 221, 239);
+    font-family:"Open Sans", sans-serif ;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+/*MENU PRINCIPAL DE TODAS LAS PAGINAS HTML LOGO + NAVEGADOR*/
+header{
+    
+    text-align: center;
+}
+.logo{
+    background-color: rgba(51,51,51,255);  
+    margin-bottom: 10px;     
+}
+.logo img{ 
+    width: 300px;
+    height: 150px; 
+    
+}
+
+
+
+/*NAVEGADOR HORIZONTAL*/
+nav{
+    padding-top: 20px ;
+    padding-bottom: 20px;
+
+
+}
+nav ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+nav ul li{
+display: inline;
+padding: 9px;
+}
+nav ul li a{
+padding: 20px 125px;
+background-color: rgb(56,52,52);
+
+text-decoration: none;
+color:white;
+font-family: "Open Sans", sans-serif;
+}
+nav ul li a:hover{
+    background-color:  rgb(32, 30, 30);
+    color:  rgb(187, 122, 122);
+}
+.principal{
+    background-color:  rgb(32, 30, 30);
+    color:  rgb(187, 122, 122);
+    
+    
+}
+
+/*SECCION DONDE IRÁ EL CONTENIDO EN TODAS LAS PAGINAS(MENOS EN registro.html). Esta formado por un section padre y dentro tiene un  div con un fondo y otro div con el contenido */
+ /*EN SECTION(CONTENEDOR PADRE) DEFINO LOS MARGENES Y LUEGO EN CADA PAGINA DICHO APARTADO TIENE UNA CLASE DIFERENTE DONDE AJUSTAREMOS EL ALTO DEL CONTENEDOR */
+section{
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left:100px;
+}
+.seccionInicio{
+    height: 500px;
+}
+.seccionProducto{
+    height: 1080px;
+}
+/*Le llame a esta clase proteina porque es el primer articulo de la tienda, pero esta clase es usada por todas las paginas de los articulos: proteina.html,
+avena.html, creatina.html, leggings.html,shaker.html*/
+.seccionProteina{
+    height: 450px;
+}
+.seccionContacto{
+    height: 530px;
+}
+
+/*EL FONDO, TAMBIEN CADA PAGINA TIENE UNA CLASE QUE ESPECIFICARA EL ALTO NECESARIO*/
+.fondoSeccion{
+    width: 100%;
+    background-image: url(img/imgaenFondoArticle.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    opacity: 0.4;
+    position: relative;
+    z-index: 0;
+    background-size: 500px;
+    
+
+}
+.fondoSeccionInicio{
+    height: 500px;
+}
+.fondoSeccionProductos{
+    height: 1080px;
+}
+.fondoSeccionProteina{
+    height: 450px;
+}
+.fondoSeccionContacto{
+    height: 530px;
+}
+
+/*EL CONTENIDO COMO TAL DE LA SECCIÓN, CADA PAGINA TINEE UNA CLASE PARA DEFINIR EL ALTO Y MOVER EL CONTENER ENCIMA DEL FONDO */
+.contenido{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.contenidoInicio{
+    text-align: center;
+    top: -500px;
+    height: 500px;
+}
+.contenidoProductos{
+    text-align: center;
+    top: -1080px;
+    height: 1080px;
+
+}
+.contenedorProteina{
+    text-align: center;
+    top: -450px;
+    height: 450px;
+}
+.contenidoContacto{
+    text-align: center;
+    top: -530px;
+    height: 530px;
+
+}
+
+.listaContacto a{
+    color: black;
+}
+/*CSS QUE SOLO MODIFICA A LA PÁGINA INICIO, ESPECIFICAMENTE MODIFICA EL PÁRRAFO */
+.pInicio{
+    margin: 100px;
+    margin-top: 162px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.8;
+    color: black;
+}
+
+tr td a{
+    text-decoration: none;
+    color:black ;
+}
+
+/*TODAS LAS PÁGINA COMPARTEN EL MISMO FOOTER Y EN PRODUCTOS.HTML SE AÑADE UNA CLASE A MAYORES PARA POSICIONAR BIEN EL FOOTER*/
+footer{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left:100px;
+    background-color:  rgb(32, 30, 30);;
+    padding: 30px;
+}
+footer p{
+    color: white;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px;
+    font-size: small;
+}
+footer p a{
+    color: white;
+}
+.footerProductos{
+    top: -1080px;
+    position: relative;
+}
+
+
+/*/*CSS QUE SOLO MODIFICA EN LA PÁGINA PRODUCTOS*/
+/*Especifica el tamaño de las imagenes de los productos de la página producto*/
+.imagen{
+width: 190px;
+height: 190px;
+}
+
+
+table{
+    padding: 50px;
+    text-align: left;
+}
+/*CLASE QUE EXPANDE LA CELDA CENTRAL EN LA TABLA */
+.expandirCelda{
+    width: 100%;
+    padding-left: 30px;
+}
+
+
+
+
+
+/*CSS QUE AFECTA SOLO A LA PÁGINA DE DETALLES DEL ARTICULO PROTEINA*/
+/*LISTA DE DETALLES DEL PRODUCTO + FOTO*/
+.detallesProteina{
+    display: flex;
+}
+.imagenDetalles img{
+    height: 250px;
+    width: 250px;
+    margin-left: 650px;
+    
+}
+.lista{
+    margin-left: 40px;
+    text-align: left;
+    width: 500px;
+}
+
+
+
+
+
+/*MODIFICA SOLO A LA PÁGINA DE CONTACTO*/
+/*BOTON AÑADIR A LA CESTA */
+.carrito{
+    margin-top: 20px;
+}
+.carritoDerecha{
+    text-align: right;
+}
+.carrito a{
+    display: block;
+    background-color:  rgb(32, 30, 30);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline;
+    
+    margin-right: 30px;
+
+
+}
+.carrito p{
+    display: inline;
+    margin-top: 10px;
+    margin-right: 85px;
+    
+}
+.mapa{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+.tamañoSimbolos{
+    height:30px;
+    width:30px;
+}
+.listaContacto{
+    margin-left: 400px;
+}
+.listaContacto ul li{
+    padding: 15px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+/*FORMULARIO: TODO LO QUE SEA IZQUIERDA ES PORQUE MODIFICA A LA PARTE IZQ DEL FORMULARIO, LO MISMO CON DERECHA*/
+
+
+.contenedorFormulario{
+    
+    border: solid thin red;
+    max-width: 900px;
+    height: 550px;
+    display: flex;
+    border-radius: 20px;
+    transition: all 1 ease;
+    box-shadow: 0 5px 7px rgba(0,0,0,.1);
+    
+}
+.centrarFormulario{
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+/*IZQUIERDA*/
+.infoIzquierda{
+    width: 40%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(187, 122, 122);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+.izquierda{
+    width: 100%;
+    padding: 0 30px;
+
+}
+.izquierda h2{
+    font-size: 2.5rem;
+    color: rgba(51,51,51,255);
+}
+.izquierda p{
+margin: 15px 0;
+color: rgba(51,51,51,255);
+}
+.izquierda input{
+    background-color: transparent;
+    outline: none;
+    border: solid 2px  rgba(51,51,51,255);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color:white;
+    cursor: pointer;
+    font-family:"Open Sans", sans-serif ;
+    background-color:rgba(51,51,51,255)
+    
+}
+.izquierda input:hover{
+    background-color: rgb(187, 122, 122);
+    border: solid thin white;
+
+}
+s
+/*DERECHA*/
+.infoDerecha{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    height: 550px;
+    border: solid thin red;
+    background-color:white ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+.derecha{
+    padding: 0 30px;
+}
+.derecha h2{
+    color: rgba(51,51,51,255);
+}
+.derecha p{
+    color: rgba(51,51,51,255);
+}
+.icons{
+    margin: 15px 0;
+}
+.icons img{
+    border-radius: 50%;
+    border: solid thin red;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 7px rgba(0,0,0,.1);
+}
+.icons img:hover{
+    background-color: rgb(187, 122, 122);
+}
+.form{
+    margin: 30px 0 0 0;
+    
+}
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(186, 50, 50, 0.593);
+}
+.form label input{
+width: 100%;
+padding: 10px;
+background-color: white;
+border: none;
+outline: none;
+border-radius: 20px;
+color: rgba(51,51,51,255);
+}
+.form  input[type="submit"]{
+    background-color: rgba(51,51,51,255) ;
+    color:white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family:"Open Sans", sans-serif ;
+}
+.form  input[type="submit"]:hover{
+    background-color: rgb(187, 122, 122);
+    border: none;
+    color:rgba(51,51,51,255)  ;
+    font-family:"Open Sans", sans-serif ;
+    border: solid thin  rgba(51,51,51,255) ;
+
+}
+
